@@ -23,6 +23,12 @@ def printAnswer(arr): #Print a two dimensional array
                 print(j,end=" ")
             print()
 def solve(x,y,b,counter,a,search,z=0):
+    #x,y - coordinates in the source array
+    #b - the answer matrix
+    #counter - index of the letter that we are looking for in the word
+    #a - the array of the letters
+    #search - the word we are looking for
+    #z -
     """if z = 0 than it searches for the first letter of the word, and if it doesnt find it, it goes one to the right/
         if z = 1 that it checks one square, if it doesn't have the next letter in the word, it returns back to the function that called it,
         and if it does find it that it continues to search from there, and if it finds a dead end it backtracks until z = 0
